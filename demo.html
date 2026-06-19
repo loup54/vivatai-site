@@ -23,6 +23,8 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
 .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;width:100%;max-width:640px}
 .wordmark{font-family:'Fraunces',serif;font-size:28px;color:var(--gold);letter-spacing:1px;margin-bottom:32px;opacity:0.8}
 .card{background:rgba(26,45,90,0.6);border:0.5px solid rgba(255,255,255,0.1);border-radius:16px;padding:40px 32px;width:100%;position:relative;min-height:420px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.close-btn{position:absolute;top:14px;right:16px;color:rgba(255,255,255,0.3);font-size:20px;text-decoration:none;line-height:1;transition:color 0.2s}
+.close-btn:hover{color:rgba(255,255,255,0.7)}
 .scene{display:none;flex-direction:column;align-items:center;text-align:center;width:100%;animation:fadeIn 0.5s ease}
 .scene.active{display:flex}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
@@ -94,6 +96,7 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
   <div class="wordmark">Vivat</div>
 
   <div class="card">
+    <a href="/" class="close-btn" title="Back to vivatai.org"><i class="ti ti-x"></i></a>
 
     <div class="scene active" id="s0">
       <div class="logo-big">Vivat</div>
@@ -109,7 +112,7 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
     <div class="scene" id="s1">
       <div class="kicker">The problem</div>
       <div class="headline">Students ask questions.<br>Staff can't keep up.</div>
-      <div class="sub" style="margin-top:12px">Enrolment, timetables, events, policies — the same questions, every day, at every school, across 80 countries.</div>
+      <div class="sub" style="margin-top:12px">Enrolment, timetables, events, policies — the same questions, every day, at every institution across 80 countries.</div>
       <div class="lang-badges">
         <span class="lang">English</span>
         <span class="lang" style="animation-delay:0.1s">Filipino</span>
@@ -130,7 +133,7 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
       </div>
       <div class="arrow-down"><i class="ti ti-arrow-down"></i></div>
       <div class="brain"><i class="ti ti-cpu"></i></div>
-      <div style="font-size:12px;color:var(--muted);margin-top:8px">Trained on your school's own knowledge base</div>
+      <div style="font-size:12px;color:var(--muted);margin-top:8px">Trained on your institution's own knowledge base</div>
     </div>
 
     <div class="scene" id="s3">
@@ -144,7 +147,7 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
 
     <div class="scene" id="s4">
       <div class="kicker">Franchise model</div>
-      <div class="headline">Each school gets its own branded instance.</div>
+      <div class="headline">Each institution gets its own branded instance.</div>
       <div class="inst-grid">
         <div class="inst"><div class="inst-name"><span class="flag">🇦🇺</span>De La Salle Southgate</div><div class="inst-meta">Australia · English</div></div>
         <div class="inst"><div class="inst-name"><span class="flag">🇵🇭</span>La Salle University Pacific</div><div class="inst-meta">Philippines · Filipino / English</div></div>
@@ -156,13 +159,13 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
 
     <div class="scene" id="s5">
       <div class="logo-big" style="font-size:40px">Vivat</div>
-      <div class="sub" style="color:var(--white);font-size:17px;margin-top:4px">Free pilot for your school.</div>
+      <div class="sub" style="color:var(--white);font-size:17px;margin-top:4px">Free pilot for your institution.</div>
       <div class="sub" style="margin-top:6px">WhatsApp · Telegram · Apple Messages</div>
       <div class="pilot-pair">
         <div class="info-chip"><div class="chip-label">Live at</div><div class="chip-val">vivatai.org</div></div>
         <div class="info-chip"><div class="chip-label">Try now</div><div class="chip-val">@VivatatBot</div></div>
       </div>
-      <a class="cta-btn" href="mailto:hello@vivatai.org?subject=Vivat%20pilot%20request&body=Hi%2C%0A%0AI%27m%20interested%20in%20a%20free%20Vivat%20pilot%20for%20our%20school.%0A%0ASchool%20name%3A%0ACountry%3A%0AContact%20name%3A%0A">Request a pilot →</a>
+      <a class="cta-btn" href="mailto:hello@vivatai.org?subject=Vivat%20pilot%20request&body=Hi%2C%0A%0AI%27m%20interested%20in%20a%20free%20Vivat%20pilot%20for%20our%20institution.%0A%0AInstitution%20name%3A%0ACountry%3A%0AContact%20name%3A%0A">Request a pilot →</a>
     </div>
 
   </div>
