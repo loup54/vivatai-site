@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Vivat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: oklch(22% 0.055 258); --gold: oklch(58% 0.13 68); --cream: oklch(97% 0.008 80); --ink: oklch(18% 0.025 258); --muted: oklch(52% 0.02 258); --border: oklch(88% 0.01 258); --blue: oklch(40% 0.12 258); }
+  body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 48px; display: flex; align-items: center; justify-content: space-between; background: oklch(97% 0.008 80 / 0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav-logo { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; color: var(--navy); text-decoration: none; letter-spacing: -0.02em; }
+  .nav-logo span { color: var(--gold); }
+  .content { max-width: 720px; margin: 0 auto; padding: 120px 48px 96px; }
+  .page-label { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  h1 { font-family: 'Fraunces', serif; font-size: 44px; font-weight: 300; letter-spacing: -0.02em; line-height: 1.1; color: var(--navy); margin-bottom: 12px; }
+  .updated { font-size: 13px; color: var(--muted); margin-bottom: 56px; }
+  .summary-box { background: oklch(22% 0.055 258 / 0.06); border-left: 3px solid var(--gold); padding: 20px 24px; border-radius: 0 6px 6px 0; margin-bottom: 56px; }
+  .summary-box p { font-size: 15px; line-height: 1.65; color: var(--ink); }
+  h2 { font-size: 18px; font-weight: 600; color: var(--navy); margin: 48px 0 12px; }
+  p { font-size: 15px; color: oklch(35% 0.02 258); line-height: 1.75; margin-bottom: 16px; }
+  ul { margin: 0 0 16px 20px; }
+  ul li { font-size: 15px; color: oklch(35% 0.02 258); line-height: 1.75; margin-bottom: 6px; }
+  .highlight { background: oklch(58% 0.13 68 / 0.08); border-radius: 4px; padding: 2px 6px; font-weight: 500; color: var(--navy); }
+  a { color: var(--blue); text-decoration: underline; }
+  footer { padding: 32px 48px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+  .footer-logo { font-family: 'Fraunces', serif; font-size: 16px; font-weight: 600; color: var(--navy); }
+  .footer-logo span { color: var(--gold); }
+  .footer-copy { font-size: 12px; color: var(--muted); }
+  @media (max-width: 768px) { nav { padding: 16px 24px; } .content { padding: 100px 24px 64px; } footer { flex-direction: column; gap: 8px; padding: 24px; } }
+</style>
+</head>
+<body>
+<nav><a href="/" class="nav-logo">Vivat<span>.</span></a></nav>
+<div class="content">
+  <p class="page-label">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 17 June 2026</p>
+  <div class="summary-box"><p><strong>Plain English summary:</strong> When you message Vivat, your message is sent to Anthropic's Claude AI to generate a reply. We don't sell your data, we don't store your identity, and your institution's information stays private to that institution. Conversations are held in memory only for the duration of your session.</p></div>
+  <h2>Who we are</h2>
+  <p>Vivat is an AI-powered messaging assistant operated by OurEnglish.info Pty Ltd, based in Australia. We provide Vivat to institutions in the LaSallian education network. Questions: <a href="mailto:hello@vivatai.org">hello@vivatai.org</a>.</p>
+  <h2>What data we collect</h2>
+  <p>When you send a message to Vivat, we process:</p>
+  <ul><li>The text content of your message</li><li>Your messaging channel identifier (Telegram user ID, WhatsApp number, or Apple ID) — used only to maintain conversation context within your session</li><li>The channel you're using (Telegram, WhatsApp, iMessage)</li></ul>
+  <p>We do <strong>not</strong> collect your name, email address, device data, location, or any other personal information unless you volunteer it in a message.</p>
+  <h2>How your data is used</h2>
+  <p>Your message is sent to <span class="highlight">Anthropic's Claude API</span> along with your institution's knowledge base to generate a relevant response. Anthropic processes messages in accordance with their own <a href="https://www.anthropic.com/legal/privacy" target="_blank">Privacy Policy</a>. Anthropic does not use API data to train models.</p>
+  <p>Your conversation history is held <strong>in server memory only</strong> for the duration of your active session (up to 20 message turns). It is not written to a database or retained after the session ends.</p>
+  <h2>Your institution's knowledge base</h2>
+  <p>Each institution provides its own knowledge base (timetables, policies, contacts). This data is:</p>
+  <ul><li>Loaded into memory when the bot starts</li><li>Accessible only to users messaging that institution's bot</li><li>Not shared with other institutions</li><li>Controlled entirely by the institution — they can request removal at any time</li></ul>
+  <h2>Who can see your data</h2>
+  <ul><li><strong>Anthropic</strong> — processes your message text to generate a response</li><li><strong>Telegram / WhatsApp / Apple</strong> — your chosen messaging platform transmits your message per their own privacy policies</li><li><strong>Infobip</strong> — our messaging infrastructure provider for WhatsApp and Apple Messages; processes message routing only</li><li><strong>Railway.app</strong> — our cloud hosting provider; runs the bot server in the US West region</li><li><strong>OurEnglish.info Pty Ltd staff</strong> — may access server logs for debugging purposes only</li></ul>
+  <p>We do <strong>not</strong> sell, share, or rent your data to any third party for marketing or commercial purposes.</p>
+  <h2>Data retention</h2>
+  <p>Conversation history exists in server memory only and is lost when the server restarts. Server logs are retained for up to 7 days for debugging purposes, then deleted automatically by Railway.</p>
+  <h2>Children's privacy</h2>
+  <p>Vivat is deployed by educational institutions and may be used by students of all ages. We do not knowingly collect additional personal information from minors. Contact <a href="mailto:hello@vivatai.org">hello@vivatai.org</a> with any concerns.</p>
+  <h2>Your rights</h2>
+  <p>Under Australian Privacy law and GDPR (where applicable), you have the right to know what data we hold, request deletion, and opt out at any time. Contact <a href="mailto:hello@vivatai.org">hello@vivatai.org</a>.</p>
+  <h2>Contact</h2>
+  <p><a href="mailto:hello@vivatai.org">hello@vivatai.org</a><br>OurEnglish.info Pty Ltd, Australia</p>
+</div>
+<footer>
+  <div class="footer-logo">Vivat<span>.</span></div>
+  <p class="footer-copy"><a href="/" style="color: inherit;">vivatai.org</a> &nbsp;·&nbsp; <a href="/privacy.html" style="color: inherit;">Privacy</a> &nbsp;·&nbsp; LaSallian Network AI</p>
+</footer>
+</body>
+</html>
