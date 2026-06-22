@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivat — Data &amp; Privacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0D1B3E;
+  --gold:#C9A84C;
+  --gold-light:#F0D080;
+  --white:#FFFFFF;
+  --muted:#6B7A99;
+  --light:#F7F8FC;
+  --border:#E2E6F0;
+  --green:#1D9E75;
+  --amber:#BA7517;
+}
+body{font-family:'Inter',sans-serif;background:var(--light);color:var(--navy);-webkit-font-smoothing:antialiased}
+
+nav{background:var(--navy);padding:16px 48px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Fraunces',serif;font-size:22px;color:var(--gold);letter-spacing:1px;text-decoration:none}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none}
+.nav-links a:hover{color:var(--white)}
+
+.hero{background:var(--navy);padding:48px 48px 56px;border-bottom:3px solid var(--gold)}
+.hero-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.hero-title{font-family:'Fraunces',serif;font-size:36px;font-weight:300;color:var(--white);line-height:1.25;margin-bottom:16px}
+.hero-body{font-size:15px;color:rgba(255,255,255,0.65);line-height:1.75;max-width:580px}
+
+.page{max-width:860px;margin:0 auto;padding:48px 32px}
+
+.commitment-bar{background:var(--white);border-left:4px solid var(--green);border-radius:0 8px 8px 0;padding:20px 24px;margin-bottom:40px;border-top:0.5px solid var(--border);border-right:0.5px solid var(--border);border-bottom:0.5px solid var(--border)}
+.commitment-bar h2{font-size:16px;font-weight:500;color:var(--navy);margin-bottom:6px}
+.commitment-bar p{font-size:14px;color:var(--muted);line-height:1.7}
+
+.section-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:20px;font-weight:500}
+
+.tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:48px}
+.tier{background:var(--white);border:0.5px solid var(--border);border-radius:12px;padding:24px}
+.tier.featured{border:2px solid #185FA5}
+.badge{display:inline-block;font-size:11px;padding:4px 12px;border-radius:20px;margin-bottom:14px;font-weight:500}
+.badge.standard{background:#E6F1FB;color:#185FA5}
+.badge.premium{background:#FAEEDA;color:#854F0B}
+.badge.enterprise{background:#F1EFE8;color:#5F5E5A}
+.tier-title{font-size:16px;font-weight:500;color:var(--navy);margin-bottom:4px}
+.tier-who{font-size:12px;color:var(--muted);margin-bottom:16px;font-style:italic}
+.tier ul{list-style:none;padding:0}
+.tier ul li{font-size:13px;color:#3A4A6B;padding:5px 0;display:flex;align-items:flex-start;gap:8px;line-height:1.55;border-bottom:0.5px solid var(--border)}
+.tier ul li:last-child{border-bottom:none}
+.tier ul li i{font-size:14px;flex-shrink:0;margin-top:2px}
+.tier ul li i.ok{color:var(--green)}
+.tier ul li i.note{color:var(--amber)}
+
+.guarantee-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:48px}
+.g-item{background:var(--white);border:0.5px solid var(--border);border-radius:10px;padding:18px}
+.g-item i{font-size:22px;color:var(--green);margin-bottom:10px;display:block}
+.g-label{font-size:14px;font-weight:500;color:var(--navy);margin-bottom:6px}
+.g-desc{font-size:12px;color:var(--muted);line-height:1.6}
+
+.faq{margin-bottom:48px}
+.faq-item{border-bottom:0.5px solid var(--border);padding:16px 0}
+.faq-q{font-size:14px;font-weight:500;color:var(--navy);margin-bottom:6px}
+.faq-a{font-size:13px;color:var(--muted);line-height:1.7}
+
+footer{background:var(--navy);padding:24px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-logo{font-family:'Fraunces',serif;font-size:18px;color:var(--gold)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,0.4);text-decoration:none}
+.footer-links a:hover{color:rgba(255,255,255,0.8)}
+
+.print-btn{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--navy);border:none;border-radius:8px;padding:10px 20px;font-size:13px;font-weight:500;cursor:pointer;font-family:'Inter',sans-serif;text-decoration:none;margin-top:16px}
+.print-btn:hover{background:var(--gold-light)}
+
+@media print{
+  nav,footer,.print-btn{display:none}
+  body{background:white}
+  .hero{background:var(--navy);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{padding:24px 0}
+  .tier,.g-item,.commitment-bar{break-inside:avoid}
+}
+@media(max-width:600px){
+  nav{padding:16px 20px}
+  .hero{padding:32px 20px 40px}
+  .page{padding:32px 16px}
+  footer{padding:20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Vivat</a>
+  <div class="nav-links">
+    <a href="/demo.html">See a demo</a>
+    <a href="/#contact">Get in touch</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="hero-eyebrow">Data &amp; Privacy</p>
+  <h1 class="hero-title">Your data stays yours.<br>Always.</h1>
+  <p class="hero-body">Vivat never sells, shares, or retains your institution's data. Three integration models let you choose exactly how much — or how little — data ever leaves your control.</p>
+  <a href="javascript:window.print()" class="print-btn"><i class="ti ti-download" style="font-size:15px"></i>Save as PDF</a>
+</div>
+
+<div class="page">
+
+  <div class="commitment-bar">
+    <h2>Our baseline commitment — regardless of which model you choose</h2>
+    <p>Conversations are processed in real time and discarded. We never log, store, or analyse student messages. Your knowledge base content is used solely to answer your students' questions — nothing else.</p>
+  </div>
+
+  <p class="section-label">Choose your integration model</p>
+
+  <div class="tier-grid">
+
+    <div class="tier featured">
+      <span class="badge standard">Standard — recommended</span>
+      <div class="tier-title">Hosted by Vivat</div>
+      <div class="tier-who">Schools with little or no IT team</div>
+      <ul>
+        <li><i class="ti ti-check ok"></i>Send us your content in any format — Word, PDF, email</li>
+        <li><i class="ti ti-check ok"></i>We load it. Live within days, no IT required</li>
+        <li><i class="ti ti-check ok"></i>Content stored on encrypted, access-controlled servers</li>
+        <li><i class="ti ti-check ok"></i>Update or delete your content any time</li>
+        <li><i class="ti ti-check ok"></i>Lowest cost, fastest to deploy</li>
+      </ul>
+    </div>
+
+    <div class="tier">
+      <span class="badge premium">Premium</span>
+      <div class="tier-title">Self-hosted</div>
+      <div class="tier-who">Institutions with data governance policies</div>
+      <ul>
+        <li><i class="ti ti-check ok"></i>Vivat runs entirely within your own infrastructure</li>
+        <li><i class="ti ti-check ok"></i>Your data never leaves your servers</li>
+        <li><i class="ti ti-check ok"></i>You manage the knowledge base directly</li>
+        <li><i class="ti ti-check ok"></i>We provide the code and one-time setup support</li>
+        <li><i class="ti ti-check note" style="color:var(--amber)"></i>Requires basic server access — we guide you through it</li>
+      </ul>
+    </div>
+
+    <div class="tier">
+      <span class="badge enterprise">Enterprise</span>
+      <div class="tier-title">Direct integration</div>
+      <div class="tier-who">Universities with existing student systems</div>
+      <ul>
+        <li><i class="ti ti-check ok"></i>Vivat connects to your LMS, student portal, or database</li>
+        <li><i class="ti ti-check ok"></i>Queries your systems in real time — no data copied or stored</li>
+        <li><i class="ti ti-check ok"></i>Read-only access — Vivat never writes to your systems</li>
+        <li><i class="ti ti-check ok"></i>Your IT team controls and can revoke the connection</li>
+        <li><i class="ti ti-check note" style="color:var(--amber)"></i>Requires IT team involvement for API setup</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="section-label">Our data commitments — all tiers</p>
+
+  <div class="guarantee-grid">
+    <div class="g-item">
+      <i class="ti ti-lock"></i>
+      <div class="g-label">No data selling</div>
+      <div class="g-desc">Your content and conversations are never sold or shared with third parties — ever</div>
+    </div>
+    <div class="g-item">
+      <i class="ti ti-refresh"></i>
+      <div class="g-label">No conversation storage</div>
+      <div class="g-desc">Messages are processed in real time and discarded — not logged or retained</div>
+    </div>
+    <div class="g-item">
+      <i class="ti ti-user"></i>
+      <div class="g-label">No student profiling</div>
+      <div class="g-desc">We do not collect or store personal student data or build behavioural profiles</div>
+    </div>
+    <div class="g-item">
+      <i class="ti ti-file"></i>
+      <div class="g-label">Your content, your rules</div>
+      <div class="g-desc">Update or delete your knowledge base at any time — no lock-in, no questions asked</div>
+    </div>
+    <div class="g-item">
+      <i class="ti ti-shield"></i>
+      <div class="g-label">Encrypted in transit</div>
+      <div class="g-desc">All data is encrypted in transit using TLS 1.3 and at rest using AES-256</div>
+    </div>
+    <div class="g-item">
+      <i class="ti ti-world"></i>
+      <div class="g-label">GDPR-aware</div>
+      <div class="g-desc">Designed with EU, AU, and PH data privacy regulations in mind — adaptable per jurisdiction</div>
+    </div>
+  </div>
+
+  <p class="section-label">Common questions</p>
+
+  <div class="faq">
+    <div class="faq-item">
+      <div class="faq-q">Who can see our school's knowledge base content?</div>
+      <div class="faq-a">Only your institution's designated admin and Vivat's deployment team (Standard tier). In Self-hosted and Enterprise tiers, only your own staff can access it.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do students need to create accounts or share personal data?</div>
+      <div class="faq-a">No. Students message via WhatsApp, Telegram, or iMessage using their existing accounts. Vivat does not collect names, emails, or any identifiable information.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Where are servers located?</div>
+      <div class="faq-a">Standard tier runs on Railway.app (US West). Self-hosted institutions choose their own server location — AU-based hosting is available.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What happens to our data if we stop using Vivat?</div>
+      <div class="faq-a">Your knowledge base content is deleted within 30 days of cancellation. We provide a copy of your content in plain text format on request.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Which AI provider powers Vivat?</div>
+      <div class="faq-a">Vivat uses Anthropic's Claude API. Anthropic processes messages transiently to generate responses and does not train models on API data. See Anthropic's privacy policy for full details.</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Vivat</div>
+  <div class="footer-links">
+    <a href="/">vivatai.org</a>
+    <a href="/privacy.html">Privacy policy</a>
+    <a href="mailto:hello@vivatai.org">hello@vivatai.org</a>
+  </div>
+</footer>
+
+</body>
+</html>
