@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 340" width="300" height="340">
+  <!-- Mark -->
+  <circle cx="150" cy="110" r="100" fill="#C9A84C"/>
+  <circle cx="150" cy="110" r="88" fill="#0D1B3E"/>
+  <polygon points="106,56 150,160 128,160" fill="#C9A84C"/>
+  <polygon points="194,56 150,160 172,160" fill="#C9A84C"/>
+  <rect x="139" y="157" width="22" height="5" rx="2.5" fill="#C9A84C"/>
+  <!-- Wordmark -->
+  <text x="150" y="252" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="300" fill="#0D1B3E" text-anchor="middle" letter-spacing="14">VIVAT</text>
+  <text x="150" y="278" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#C9A84C" text-anchor="middle" letter-spacing="5">LASALLIAN AI</text>
+</svg>
