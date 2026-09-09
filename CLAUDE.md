@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Static marketing site for Vivat (`vivatai.org`), an AI assistant platform for institutions with a network of branded locations — proven first in the LaSallian education network, positioning delinked from LaSallian-exclusive 2026-09-09 (see `vivat-bot/VIVAT.md`). No backend, no build step, no framework — plain HTML/CSS/JS served directly by GitHub Pages.
+Static marketing site for Vivat (`vivatai.org`), an AI assistant platform for institutions with a network of branded locations. Positioning made fully generic 2026-09-09, no origin-network references in copy (see `vivat-bot/VIVAT.md`). No backend, no build step, no framework — plain HTML/CSS/JS served directly by GitHub Pages.
 
 ## Commands
 

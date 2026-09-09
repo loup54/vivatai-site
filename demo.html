@@ -122,10 +122,10 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
 
     <div class="scene active" id="s0">
       <img src="/vivat-logo-real.png" alt="Vivat" height="90" style="display:block;margin:0 auto 10px">
-      <div class="sub" style="color:var(--muted);margin-bottom:8px">AI assistant for institutions with a network of branded locations</div>
+      <div class="sub" style="color:var(--muted);margin-bottom:8px">The AI front desk for institutions with more locations than staff</div>
       <div class="stat-row">
-        <div class="stat"><div class="stat-n">1,000+</div><div class="stat-l">schools</div></div>
-        <div class="stat"><div class="stat-n">80</div><div class="stat-l">countries</div></div>
+        <div class="stat"><div class="stat-n">24/7</div><div class="stat-l">instant answers</div></div>
+        <div class="stat"><div class="stat-n">4</div><div class="stat-l">channels</div></div>
       </div>
       <div class="sub">One AI engine. Every channel. Every language.</div>
     </div>
@@ -162,7 +162,7 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
       <div class="kicker">Live demo</div>
       <div class="headline">A student asks. Vivat answers.</div>
       <div class="chat-box">
-        <div class="chat-header"><i class="ti ti-brand-whatsapp" style="font-size:13px;vertical-align:-1px;margin-right:4px"></i>De La Salle College Southgate</div>
+        <div class="chat-header"><i class="ti ti-brand-whatsapp" style="font-size:13px;vertical-align:-1px;margin-right:4px"></i>Southgate College</div>
         <div id="msgs"></div>
       </div>
     </div>
@@ -171,10 +171,10 @@ body{background:var(--navy);font-family:'Inter',sans-serif;min-height:100vh;disp
       <div class="kicker">Franchise model</div>
       <div class="headline">Each institution gets its own branded instance.</div>
       <div class="inst-grid">
-        <div class="inst"><div class="inst-name"><span class="flag">🇦🇺</span>De La Salle Southgate</div><div class="inst-meta">Australia · English</div></div>
-        <div class="inst"><div class="inst-name"><span class="flag">🇵🇭</span>La Salle University Pacific</div><div class="inst-meta">Philippines · Filipino / English</div></div>
-        <div class="inst"><div class="inst-name"><span class="flag">🇫🇷</span>Institut De La Salle Méridien</div><div class="inst-meta">France · French</div></div>
-        <div class="inst"><div class="inst-name"><span class="flag">🇨🇴</span>Universidad La Salle del Sur</div><div class="inst-meta">Colombia · Spanish</div></div>
+        <div class="inst"><div class="inst-name"><span class="flag">🇦🇺</span>Southgate College</div><div class="inst-meta">Australia · English</div></div>
+        <div class="inst"><div class="inst-name"><span class="flag">🇵🇭</span>Pacific Coast University</div><div class="inst-meta">Philippines · Filipino / English</div></div>
+        <div class="inst"><div class="inst-name"><span class="flag">🇫🇷</span>Institut Méridien</div><div class="inst-meta">France · French</div></div>
+        <div class="inst"><div class="inst-name"><span class="flag">🇨🇴</span>Universidad del Sur</div><div class="inst-meta">Colombia · Spanish</div></div>
       </div>
       <div class="sub">Same engine. Different KB. Different brand. Instant deploy.</div>
     </div>
@@ -205,7 +205,7 @@ const TOTAL=6;
 let cur=0,chatDone=false,muted=false,mouthTimer=null;
 
 const NARRATION=[
-  "Welcome to Vivat — AI assistant for institutions with a network of branded locations. Proven first in Catholic education, with the LaSallian network — over a thousand schools, eighty countries.",
+  "Welcome to Vivat — the AI front desk for institutions with more locations than staff to answer every question.",
   "Every day, students ask the same questions at every institution. Enrolment, timetables, events, policies. Staff can't keep up — especially across eighty countries and dozens of languages.",
   "Vivat connects to the channels students already use — WhatsApp, Telegram, LINE, and Messenger — all powered by one AI brain, trained on each institution's own knowledge base.",
   "Here's how it looks in practice. A student messages the school's WhatsApp number and gets an instant, accurate reply.",
